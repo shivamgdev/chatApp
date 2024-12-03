@@ -47,9 +47,7 @@ const ChatScreen = () => {
     return (
       <>
         {isDifferentDay && (
-          <Text
-            style={{ alignSelf: "center", marginVertical: 10, color: "gray" }}
-          >
+          <Text style={styles.dateText}>
             {new Date(item.sentAt).toDateString()}
           </Text>
         )}
@@ -89,5 +87,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#f5f5f5",
   },
+  dateText: { alignSelf: "center", marginVertical: 10, color: "gray" },
 });
 export default ChatScreen;

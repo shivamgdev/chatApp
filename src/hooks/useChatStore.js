@@ -38,7 +38,7 @@ const useChatStore = create((set) => ({
 }));
 
 export const ChatProvider = ({ children }) => {
-  return children; // Placeholder provider (adjust as necessary)
+  return children; // Placeholder provider
 };
 
 export default useChatStore;
